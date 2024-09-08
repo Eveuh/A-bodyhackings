@@ -1,0 +1,45 @@
+---
+import "../pages/index.astro"
+import { Image } from 'astro:assets';
+---
+
+
+<div class="nav-links">
+    <a href="#accueil">Home</a>
+    <a href="#about">About</a>
+    <a href="#areas">Blog</a>
+    <a href="/account">         
+      <Image
+      src="/user_icon.png"
+      alt="Profile"
+      class="user-icon"
+      width={16}
+      height={16}
+      />
+    </a>
+</div>
+
+
+<!----------STYLES---------->
+<style>
+  .nav-links {
+    display: flex;
+    /* position: fixed; */
+    justify-content: flex-end;
+    width: 100vw;
+    gap: 50px;
+    font-family: 'Fira Code Variable', monospace;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    mix-blend-mode: difference;
+  }
+
+  .nav-links a:hover {
+    text-shadow: 2px 2px 5px #26D9B9;
+
+  }
+</style>
+

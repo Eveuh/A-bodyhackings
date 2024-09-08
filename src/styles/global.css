@@ -1,0 +1,248 @@
+/* ----------REMISE A ZÉRO----------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* -----------BODY----------- */
+body {
+  background-color: black;
+  color: white;
+}
+
+
+
+/* -----------FONTS----------- */
+p {
+  font-family: 'Fira Code Variable', monospace;
+}
+
+h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 5vw; /* METTRE DES REM */
+}
+
+h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 6vw;
+}
+
+h3 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 4.5vw;
+}
+
+
+
+
+
+
+/* ----------SECTION ACCUEIL----------- */
+#accueil {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh
+}
+
+/*---logo---*/
+.Logo {
+  display: flex;
+  width: 40vw;
+  height: 50vh;
+  align-self: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.brand-name h1 {
+  margin: 0;
+  color: white;
+  padding: 0;
+}
+
+.bh-logo-home {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+/*---texte quyi defile---*/
+@keyframes defile {
+  from { transform: translateY(-100%); }
+
+  to { transform: translateY(110%); }  
+}
+
+
+.Tagline-vertical p {
+  animation: defile 8s linear infinite;
+  /* overflow: hidden; */
+  font-size: 1rem;
+  color: white;
+  padding-left: 5px;
+  writing-mode: sideways-lr;
+  align-self: flex-end;
+  white-space: now-wrap;
+}
+
+
+
+
+
+
+
+
+/* ----------SECTION ABOUT------------ */
+#about {
+  display: flex;
+  flex-direction: row; /*default*/ 
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+div.left-about {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+div.card-about{
+  width: 30vw;
+  height: 60vh;
+  border: 30px solid #ccc;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 20px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+div.card-content{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  /* padding:30px; */
+  /* margin: 20px; */
+  /* background-color: rgba(255,255,255,0.8); */
+  overflow-y: auto;
+  color: black;
+  width: 80%;
+  height: 85%;
+  border-radius: 20px;
+}
+
+div.right-about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 10vw;
+}
+
+div.abo-logo{
+  display: flex;
+  align-items: center;
+  height: 4.5vw;
+}
+
+.bh-logo-about {
+  height: 85%;
+  width: auto;
+  /* height: 7vw; */
+}
+
+div.tiret-ut{
+  display: flex;
+  width: 50%;
+  height: 15vh;
+  align-items: center;
+}
+
+.tiret-ut .tiret{
+  width: 8vw;
+  height: 4px;
+  background-color: white;
+  /* margin: 10px; */
+}
+
+
+/* ----------SECTION AREAS------------ */
+#areas{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  /* background-image: "url('/public/lignes-logo-woutwings.svg')";
+  background-size: cover;
+  position: fixed;
+  background-size: contain; */
+}
+
+.thefive-title {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;  
+  text-align: center;
+}
+
+.thefive:hover {
+  text-shadow: 2px 2px 5px #26D9B9;
+}
+
+.hackings-areas {
+  width: 50vw;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.lignes-logo {
+  overflow: hidden;
+  position: absolute;
+  height: auto;
+  width: 30vw;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  /* transform: scale(1.35); */
+  /* transform: translate(20vw) scale(1.125); */
+}
+
+.lignes-logo-text {
+  overflow: hidden;
+  position: absolute;
+  height: auto;
+  width: 30vw;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  /* transform: scale(1.35); */
+  /* transform: translate(20vw) scale(1.125); */
+
+}
+
+.stuck-text {
+  display: flex;
+  position: relative;
+  width: 30vw;
+  /* justify-content: center; */
+}
+
+
